@@ -1,0 +1,35 @@
+/* Define a altura mínima do corpo da página para ocupar a tela inteira */
+.custom-bg {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* Ajusta o conteúdo principal para ocupar o espaço disponível */
+.main-content {
+  flex: 1;
+}
+
+/* Estilos personalizados para o padding */
+.px-custom {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Estilos para o footer */
+.footer {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: auto; /* Faz com que o footer fique no fundo */
+  background-color: #000000; /* Cor do footer */
+  color: #ffffff; /* Cor do texto do footer */
+}
+
+/* Ajusta o footer para telas menores */
+@media screen and (max-width: 900px) {
+  .footer {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
